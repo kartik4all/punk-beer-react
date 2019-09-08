@@ -16,7 +16,7 @@ export const CardItem = props => {
           </div>
           <div className="col-md-2">
             <button className="starBtn" onClick={e => addToFav(e, item)}>
-              <i class="fa fa-star" />
+              <i className={item.flag?"fa fa-star fav" : "fa fa-star"} />
             </button>
           </div>
         </div>
